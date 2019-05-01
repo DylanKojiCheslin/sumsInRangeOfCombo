@@ -1,0 +1,19 @@
+{
+  "name": "sumsinrangeofcombo",
+  "version": "0.0.1",
+  "description": "find how many sums are in a range",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DylanKojiCheslin/sumsInRangeOfCombo.git"
+  },
+  "author": "Dylan Koji-Cheslin",
+  "license": "AGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/DylanKojiCheslin/sumsInRangeOfCombo/issues"
+  },
+  "homepage": "https://github.com/DylanKojiCheslin/sumsInRangeOfCombo#readme"
+}
