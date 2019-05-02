@@ -16,16 +16,20 @@ example of naive generation and testing
 | sum        | 2   |4    |6  |8  |6    | 8   | 10  | 8   |  10 |   12  | 12    |18    |20     |
 | inRange    | 0   |0    |0  |1  |0    | 1   | 0   | 1   |  0  |   0   | 0     |0     |0      |
 
- -[] substates could be generated into directed graph structure or with recursive backtracking?
+ -[] substates could be generated into directed graph structure or tree or with recursive backtracking?
  -[] find a way to generate combinations of substates sums in smallest to largest order
   -[] as each entry is summed/added to directed graph check if it is the larger than previous and store it for later/skip it for now if not?
   -[] there is a limitation related to lowerLimit and the of number of entries for substates that have repeated entry values 
-  ex: sumsInRangeOfCombo(1,1,1,1,1,1,1] 5, 6) all substates of nums with less than 5 entries can be skipped
- -[] don't generate micro-states that contain entries above upperlimmit and stop recursion/going that that direction 
+  ex: sumsInRangeOfCombo(1,1,1,1,1,1,1] 7, 5) all substates of nums with less than 5 entries can be skipped
+ -[] don't generate substates that contain entries above upperlimmit and stop recursion/going that that direction 
  
 
-[1,1,1,1,1,1,1] 5, 6 //returns 4 
-[1,2,3,4] 
+[2,4,6,8], 10, 6 //returns 4
+[1,2,3,4] 3, 5 //returns 2
+[1,2,3,4] 3, 9 //returns 9
+[1,1,1,1,1,1,1] 7, 5 //returns 7
+
+
 
 ## substate generation
 if substate could be generated in order of sum, many computations could be avoided
@@ -40,6 +44,7 @@ if substate could be generated in order of sum, many computations could be avoid
 recursion
 memoization
 backtracking
+tree
 directed graphs
 
 
