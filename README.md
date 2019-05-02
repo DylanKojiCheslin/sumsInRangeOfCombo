@@ -24,8 +24,17 @@ example of naive generation and testing
  -[] don't generate micro-states that contain entries above upperlimmit and stop recursion/going that that direction 
  
 
-[1,1,1,1,1,1,1] 5, 6
+[1,1,1,1,1,1,1] 5, 6 //returns 4 
 [1,2,3,4] 
+
+## microstate generation
+if microstate could be generated in order of sum, many computations could be avoided
+
+| :--------- |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| microstate | 1234| 234 | 134 | 124 | 34  | 123 | 24  | 23  | 14  | 13  | 4   | 3   | 12  | 2   | 1   |
+| sum        | 10  | 9   | 8   | 7   | 7   | 6   | 6   | 5   | 5   | 4   | 4   | 3   | 3   | 2   | 1   |
+
+
 
 ## patterns
 recursion
