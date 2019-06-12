@@ -37,17 +37,17 @@ example of naive generation and testing
 ## substate generation
 if substate could be generated in order of sum, many computations could be avoided  
 
-| :------- | :-----: | :---: | :---: | :---: | :-: | :---: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | 
 | substate | 1,2,3,4 | 2,3,4 | 1,3,4 | 1,2,4 | 3,4 | 1,2,3 | 2,4 | 2,3 | 1,4 | 1,3 |  4  |  3  | 1,2 |  2  |  1  | 
+| :------- | :-----: | :---: | :---: | :---: | :-: | :---: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | 
 |  sum     |  10     |  9    |  8    |  7    |  7  |  6    |  6  |  5  |  5  |  4  |  4  |  3  |  3  |  2  |  1  | 
 
 
 the "negative" or excluded entries form a substate create symmetry of the overall combinations, could possibly be used to skip the second half of generation by subtracting from the largest sum?   
 
-| :------- | :-----: | :---: | :---: | :---: | :-: | :---: | :-: | :-: | :-: | :-: | :---: | :----: | :-: | :---: | :----: | 
-| substate | 1,2,3,4 | 2,3,4 | 1,3,4 | 1,2,4 | 3,4 | 1,2,3 | 2,4 | 2,3 | 1,4 | 1,3 |  4    |  3     | 1,2 |  2    |  1     | 
+| substate | 1,2,3,4 | 2,3,4 | 1,3,4 | 1,2,4 | 3,4 | 1,2,3 | 2,4 | 2,3 | 1,4 | 1,3 |  4    |  3     | 1,2 |  2    |  1     |  
+| :------- | :-----: | :---: | :---: | :---: | :-: | :---: | :-: | :-: | :-: | :-: | :---: | :----: | :-: | :---: | :----: |  
 | negative |  ∅      |  1    |  2    |  3    | 1,2 |  4    | 1,3 | 1,4 | 2,3 | 2,4 | 1,2,3 | 1,2,3  | 3,4 | 1,3,4 |  2,3,4 | 
-|  sum     |  10     |  9    |  8    |  7    |  7  |  6    |  6  |  5  |  5  |  4  |  4    |  3     |  3  |  2    |  1     | 
+|  sum     |  10     |  9    |  8    |  7    |  7  |  6    |  6  |  5  |  5  |  4  |  4    |  3     |  3  |  2    |  1     |  
 
 
 ## patterns
@@ -55,6 +55,11 @@ recursion
 memoization
 backtracking
 tree
-directed graphs
+directed graphs  
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 
