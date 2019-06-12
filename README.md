@@ -57,10 +57,3 @@ memoization
 backtracking
 tree
 directed graphs  
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
-
