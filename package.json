@@ -4,7 +4,7 @@
   "description": "find how many sums are in a range",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "babel-node spec/run.js",
     "build": "babel src -d lib"
   },
   "repository": {
