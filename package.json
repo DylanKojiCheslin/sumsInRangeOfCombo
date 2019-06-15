@@ -4,7 +4,8 @@
   "description": "find how many sums are in a range",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "babel src -d lib"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/DylanKojiCheslin/sumsInRangeOfCombo#readme",
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "jasmine": "^3.4.0",
     "sinon": "^7.3.2"
   },
