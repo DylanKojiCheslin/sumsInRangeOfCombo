@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/DylanKojiCheslin/sumsInRangeOfCombo/issues"
   },
-  "homepage": "https://github.com/DylanKojiCheslin/sumsInRangeOfCombo#readme"
+  "homepage": "https://github.com/DylanKojiCheslin/sumsInRangeOfCombo#readme",
+  "devDependencies": {
+    "jasmine": "^3.4.0",
+    "sinon": "^7.3.2"
+  },
+  "dependencies": {}
 }
