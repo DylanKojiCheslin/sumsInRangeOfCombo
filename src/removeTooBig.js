@@ -1,3 +1,3 @@
-export function removeTooBig(array, upperLimit, lowerLimit){
+export function removeTooBig(array, upperLimit){
   return (array.filter(entry => entry <= upperLimit))
 }
