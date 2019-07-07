@@ -1,4 +1,5 @@
 export function generatePowerSetWithoutEmptySet(array) {
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
   const result = [];
   for (let i = 1; i < (1 << array.length); i++) {
     let subset = [];
@@ -9,5 +10,6 @@ export function generatePowerSetWithoutEmptySet(array) {
     }
     result.push(subset);
   }
-  return result;
+  const sorted = result.sort((a,b) => reducer(a) - reducer (b));
+  return sorted;
 }

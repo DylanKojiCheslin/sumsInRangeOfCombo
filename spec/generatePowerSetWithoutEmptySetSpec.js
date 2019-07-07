@@ -14,7 +14,7 @@ describe('generatePowerSetWithoutEmptySet', () => {
     expect(actualOutput).toContain([1,2,3]);
   }),
   it('return in smallest to largest order', () => {
-    const expectedOutput = [ [1],[2],[3],[1,2],[1,3],[2,3],[1,2,3] ];
+    const expectedOutput = [ [1],[2],[1,2],[3],[1,3],[2,3],[1,2,3] ];
     const actualOutput = generatePowerSetWithoutEmptySet([1,2,3]);
     expect(actualOutput).toEqual(expectedOutput);
   });
